@@ -1,0 +1,111 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.file-list {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+/* Add padding and top margin for consistent spacing */
+.file-listing {
+  padding-left: 20px;
+  margin-top: 0px;  /* Consistent space at the top */
+}
+
+.file-viewer {
+  width: 60%;
+  padding-left: 20px;
+  padding-right: 20px;  /* Add space on the right as well */
+  margin-top: 20px;     /* Consistent space at the top */
+  border-left: 1px solid #ccc;
+  overflow-y: auto;
+  margin-left: 20px; 
+  margin-bottom: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: calc(100% - 10px); /* Reduce width slightly to add a gap */
+  font-size: 14px;
+  border-bottom: 1px solid black; /* Line under the entire table */
+  margin-bottom: 10px; /* Add space below the table */
+}
+
+th, td {
+  padding: 5px 10px;
+  text-align: left;
+  padding-right: 20px; /* Add right padding to th and td */
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+}
+
+th {
+  font-weight: bold;
+  color: #007bff; /* Set the header text color to blue */
+  cursor: default; /* Change cursor to default to indicate it's not clickable */
+  text-decoration: underline; /* Underline the table headers */
+  border-bottom: 1px solid black; /* Single line under the header */
+}
+
+td {
+  border: none; /* No borders between rows */
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+hr {
+  border: none;
+  border-top: 1px solid black;
+  width: 100%;
+}
+
+img {
+  margin-right: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.file-listing a {
+    text-decoration: underline; /* Underline text in the name column */
+}
+
+/* Styles for the more-info.html retro theme */
+.retro-theme {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #000;
+    width: 90%;
+    margin: auto;
+}
+
+.retro-theme h1 {
+    font-size: 48px;
+    color: #000;
+    text-shadow: 1px 1px 0 #000;
+    margin: 0;
+    text-align: center;
+}
+
