@@ -1,5 +1,5 @@
 const repoOwner = 'liet-git';
-const repoName = 'yan.github.io';
+const repoName = 'liet-git.github.io';
 const sourceFolder = 'source';
 
 // Create a cache object to store directory structures
