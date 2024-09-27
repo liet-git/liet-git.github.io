@@ -148,5 +148,8 @@ async function loadFileContent(filePath) {
 (async function () {
   const rootContents = await fetchDirectoryContents();
   renderDirectoryListing(rootContents);
+  
+  // Load about.html after rendering the directory
+  await loadFileContent(`${sourceFolder}/about.html`);
 })();
 
